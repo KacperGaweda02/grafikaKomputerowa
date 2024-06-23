@@ -1,0 +1,128 @@
+{
+    "metadata": {
+        "version": 4.5,
+        "type": "Object",
+        "generator": "Manual"
+    },
+    "materials": [
+        {
+            "uuid": "material-uuid",
+            "type": "MeshStandardMaterial",
+            "color": 16777215,
+			"metalness": 0.2,
+			"roughness": 0.3
+        }
+    ],
+    "geometries": [
+        {
+            "uuid": "base-disk-uuid",
+            "type": "CylinderGeometry",
+            "radiusTop": 0.5,
+            "radiusBottom": 0.5,
+            "height": 0.1,
+            "radialSegments": 64
+        },
+        {
+            "uuid": "tapered-disk-uuid",
+            "type": "CylinderGeometry",
+            "radiusTop": 0.3,
+            "radiusBottom": 0.45,
+            "height": 0.7,
+            "radialSegments": 64
+        },
+        {
+            "uuid": "column-uuid",
+            "type": "CylinderGeometry",
+            "radiusTop": 0.25,
+            "radiusBottom": 0.3,
+            "height": 1,
+            "radialSegments": 64
+        },
+        {
+            "uuid": "column1-uuid",
+            "type": "CylinderGeometry",
+            "radiusTop": 0.4,
+            "radiusBottom": 0.25,
+            "height": 0.2,
+            "radialSegments": 64
+        },
+        {
+            "uuid": "column2-uuid",
+            "type": "CylinderGeometry",
+            "radiusTop": 0.3,
+            "radiusBottom": 0.4,
+            "height": 0.2,
+            "radialSegments": 64
+        },
+        {
+            "uuid": "transition-uuid",
+            "type": "CylinderGeometry",
+            "radiusTop": 0.4,
+            "radiusBottom": 0.25,
+            "height": 0.6,
+            "radialSegments": 64
+        },
+        {
+            "uuid": "flat-cone-uuid",
+            "type": "ConeGeometry",
+            "radius": 0.4,
+            "height": 0.2,
+            "radialSegments": 64
+        }
+    ],
+    "object": {
+        "uuid": "object-uuid",
+        "type": "Group",
+        "children": [
+            {
+                "uuid": "base-disk-object-uuid",
+                "type": "Mesh",
+                "geometry": "base-disk-uuid",
+                "material": "material-uuid",
+                "position": [0, -1, 0]
+            },
+            {
+                "uuid": "tapered-disk-object-uuid",
+                "type": "Mesh",
+                "geometry": "tapered-disk-uuid",
+                "material": "material-uuid",
+                "position": [0, -0.6, 0]
+            },
+            {
+                "uuid": "column-object-uuid",
+                "type": "Mesh",
+                "geometry": "column-uuid",
+                "material": "material-uuid",
+                "position": [0, 0, 0]
+            },
+            {
+                "uuid": "column1-object-uuid",
+                "type": "Mesh",
+                "geometry": "column1-uuid",
+                "material": "material-uuid",
+                "position": [0, 0.6, 0]
+            },
+            {
+                "uuid": "column2-object-uuid",
+                "type": "Mesh",
+                "geometry": "column2-uuid",
+                "material": "material-uuid",
+                "position": [0, 0.8, 0]
+            },
+            {
+                "uuid": "transition-object-uuid",
+                "type": "Mesh",
+                "geometry": "transition-uuid",
+                "material": "material-uuid",
+                "position": [0, 1.0, 0]
+            },
+            {
+                "uuid": "flat-cone-object-uuid",
+                "type": "Mesh",
+                "geometry": "flat-cone-uuid",
+                "material": "material-uuid",
+                "position": [0, 1.4, 0]
+            }
+        ]
+    }
+}
